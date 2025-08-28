@@ -11,8 +11,6 @@ function exibirTextoNaTela(tag, texto) {
         utterance.lang = 'pt-BR'; 
         utterance.rate = 1.2; 
         window.speechSynthesis.speak(utterance); 
-    } else {
-        console.log("Web Speech API não suportada neste navegador.");
     }
 }
 
@@ -54,7 +52,7 @@ function gerarNumeroAleatorio() {
     } else {
         listaDeNumerosSorteados.push(numeroSecreto);
         console.log(listaDeNumerosSorteados);
-        return numeroLimite;
+        return numeroSecreto;
     }
 }
 
